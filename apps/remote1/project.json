@@ -23,7 +23,7 @@
           "dev": true
         }
       },
-      "defaultConfiguration": "dev"
+      "defaultConfiguration": "production"
     },
     "esbuild": {
       "executor": "@angular-devkit/build-angular:application",

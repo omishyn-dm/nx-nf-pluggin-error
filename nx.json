@@ -6,7 +6,7 @@
   "defaultProject": "remote1",
   "targetDefaults": {
     "build": {
-      "cache": true,
+      "cache": false,
       "dependsOn": ["^build"],
       "inputs": ["production", "^production"]
     },
