@@ -1,0 +1,48 @@
+@import './scss/keyframes';
+
+$default-offset: 1rem;
+$translucent-white: rgba(#fff, 0.7);
+
+:host {
+	.sm {
+		@import './scss/semipolar/sm';
+		@import './scss/trinity/sm';
+		@import './scss/scaling-squares/sm';
+		@import './scss/half-circle/sm';
+	}
+
+	.md {
+		@import './scss/semipolar/md';
+		@import './scss/trinity/md';
+		@import './scss/scaling-squares/md';
+		@import './scss/half-circle/md';
+		@import './scss/circle-of-dots/md';
+	}
+
+	.lg {
+		@import './scss/semipolar/lg';
+		@import './scss/trinity/lg';
+		@import './scss/scaling-squares/lg';
+		@import './scss/half-circle/lg';
+	}
+
+	.circle-spinner {
+		align-items: center;
+		display: flex;
+		height: 100%;
+		justify-content: center;
+		margin-top: $default-offset * 2;
+		width: 100%;
+		z-index: 10;
+
+		&.translucent {
+			background: $translucent-white;
+			height: 100%;
+			left: 0;
+			margin-top: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+	}
+}

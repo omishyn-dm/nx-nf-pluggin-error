@@ -9,22 +9,8 @@
         "plugin:@angular-eslint/template/process-inline-templates"
       ],
       "rules": {
-        "@angular-eslint/directive-selector": [
-          "error",
-          {
-            "type": "attribute",
-            "prefix": "nxNfPluginError",
-            "style": "camelCase"
-          }
-        ],
-        "@angular-eslint/component-selector": [
-          "error",
-          {
-            "type": "element",
-            "prefix": "nx-nf-plugin-error",
-            "style": "kebab-case"
-          }
-        ]
+        "@angular-eslint/component-class-suffix": "off",
+        "@typescript-eslint/no-explicit-any": "off"
       }
     },
     {

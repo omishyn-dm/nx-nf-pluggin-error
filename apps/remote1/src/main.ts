@@ -1,7 +1,9 @@
-import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
-import { AppComponent } from './app/app.component';
+import {initFederation} from '@angular-architects/native-federation';
+import {bootstrapApplication} from '@angular/platform-browser';
+import {StandaloneComponent} from './app/standalone.component';
+import {appContainerConfig} from './app/app-container.config';
 
-bootstrapApplication(AppComponent, appConfig).catch((err) =>
-  console.error(err)
-);
+initFederation()
+  .catch((err) => console.error(err))
+  .then(() => bootstrapApplication(StandaloneComponent, appContainerConfig))
+  .catch((err) => console.error(err));

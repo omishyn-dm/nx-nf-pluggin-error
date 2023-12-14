@@ -1,0 +1,54 @@
+<ng-container [ngSwitch]="type">
+	<div *ngSwitchCase="SpinnerType.Semipolar" [ngClass]="size">
+		<div class="semipolar-spinner">
+			<div class="ring" [style.border-top-color]="color" [style.border-left-color]="color"></div>
+			<div class="ring" [style.border-top-color]="color" [style.border-left-color]="color"></div>
+			<div class="ring" [style.border-top-color]="color" [style.border-left-color]="color"></div>
+			<div class="ring" [style.border-top-color]="color" [style.border-left-color]="color"></div>
+			<div class="ring" [style.border-top-color]="color" [style.border-left-color]="color"></div>
+		</div>
+	</div>
+
+	<div *ngSwitchCase="SpinnerType.Trinity" [ngClass]="size">
+		<div class="trinity-rings-spinner">
+			<div class="circle" [style.border-color]="color"></div>
+			<div class="circle" [style.border-color]="color"></div>
+			<div class="circle" [style.border-color]="color"></div>
+		</div>
+	</div>
+
+	<div *ngSwitchCase="SpinnerType.ScalingSquares" [ngClass]="size">
+		<div class="scaling-squares-spinner">
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+		</div>
+	</div>
+
+	<div *ngSwitchCase="SpinnerType.HalfCircle" [ngClass]="size">
+		<div class="half-circle-spinner">
+			<div class="circle circle-1" [style.border-top-color]="color"></div>
+			<div class="circle circle-2" [style.border-bottom-color]="color"></div>
+		</div>
+	</div>
+
+	<div *ngSwitchCase="SpinnerType.CircleOfDots" class="md">
+		<div class="circle-of-dots-spinner" [style.--color]="color">
+			<div class="circle"></div>
+			<div class="circle"></div>
+			<div class="circle"></div>
+			<div class="circle"></div>
+			<div class="circle"></div>
+			<div class="circle"></div>
+			<div class="circle"></div>
+			<div class="circle"></div>
+		</div>
+	</div>
+
+	<div *ngSwitchDefault>
+		<div class="circle-spinner" [class]="size" [ngClass]="{translucent: translucent}">
+			<mat-spinner [color]="color"></mat-spinner>
+		</div>
+	</div>
+</ng-container>

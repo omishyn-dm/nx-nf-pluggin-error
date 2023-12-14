@@ -1,0 +1,72 @@
+@keyframes trinity-rings-spinner-circle1-animation {
+	0% {
+		transform: rotateZ(20deg) rotateY(0deg);
+	}
+	100% {
+		transform: rotateZ(100deg) rotateY(360deg);
+	}
+}
+@keyframes trinity-rings-spinner-circle2-animation {
+	0% {
+		transform: rotateZ(100deg) rotateX(0deg);
+	}
+	100% {
+		transform: rotateZ(0deg) rotateX(360deg);
+	}
+}
+@keyframes trinity-rings-spinner-circle3-animation {
+	0% {
+		transform: rotateZ(100deg) rotateX(-360deg);
+	}
+	100% {
+		transform: rotateZ(-360deg) rotateX(360deg);
+	}
+}
+
+@keyframes semipolar-spinner-animation {
+	50% {
+		transform: rotate(360deg) scale(0.7);
+	}
+}
+
+@keyframes scaling-squares-spinner-animation-child-1 {
+	50% {
+		transform: translate(150%, 150%) scale(2, 2);
+	}
+}
+
+@keyframes scaling-squares-spinner-animation-child-2 {
+	50% {
+		transform: translate(-150%, 150%) scale(2, 2);
+	}
+}
+
+@keyframes scaling-squares-spinner-animation-child-3 {
+	50% {
+		transform: translate(-150%, -150%) scale(2, 2);
+	}
+}
+
+@keyframes scaling-squares-spinner-animation-child-4 {
+	50% {
+		transform: translate(150%, -150%) scale(2, 2);
+	}
+}
+
+@keyframes half-circle-spinner-animation {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes circle-of-dots-spinner-animation {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
