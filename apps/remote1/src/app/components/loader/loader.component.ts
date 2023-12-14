@@ -1,5 +1,5 @@
 import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
-import {SpinnerType} from '../../entuties/spinner.entity';
+import {SpinnerType} from '../spinner';
 
 @Component({
 	selector: 'loader',
