@@ -3,6 +3,7 @@
   "affected": {
     "defaultBase": "main"
   },
+  "defaultProject": "remote1",
   "targetDefaults": {
     "build": {
       "cache": true,
