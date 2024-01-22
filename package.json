@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"license": "MIT",
 	"scripts": {
-		"build": "node ./clear.js && npx nx build",
+		"build": "node ./clear.js && node --trace-warnings ./node_modules/nx/bin/nx build",
 		"fix-build-nf": "node ./nf-copy.js",
 		"postinstall": "npm run fix-build-nf"
 	},
