@@ -11,7 +11,7 @@ function getDest(name) {
 
 function copyResources() {
 	try {
-		['highcharts', '@angular-architects', '@bugsnag'].forEach(async (name) => {
+		['highcharts', '@angular-architects', '@bugsnag', 'ora'].forEach(async (name) => {
 			await fse.copy(getSource(name), getDest(name));
 		});
 
